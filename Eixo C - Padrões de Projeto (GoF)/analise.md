@@ -16,7 +16,7 @@ Também foi observada a existência de um fluxo centralizado de persistência ut
 ### Diagnóstico 
 Não foi possível confirmar a implementação explícita do padrão Singleton no código-fonte, porém a arquitetura apresenta características compatíveis com esse padrão devido à centralização das operações de persistência em um único componente, uma vez que o gerenciamento do banco de dados aparenta ocorrer de forma centralizada, evitando múltiplas conexões desnecessárias ao mecanismo de armazenamento.
 Essa abordagem reduz a redundância operacional e melhora o controle sobre acesso aos dados, especialmente em um sistema que executa captura contínua de tela, OCR e transcrição de áudio simultaneamente.
-Além disso, a arquitetura também sugere utilização parcial do padrão Factory Method na criação de componentes de processamento, permitindo inicialização dinâmica de serviços dependendo do ambiente ou plataforma utilizada.
+Além disso, a arquitetura também sugere utilização parcial do padrão Factory na criação de componentes de processamento, permitindo inicialização dinâmica de serviços dependendo do ambiente ou plataforma utilizada.
 
 ### Classificação de Risco
 Risco: Médio
@@ -30,6 +30,7 @@ Recomenda-se formalizar a criação de conexões e serviços críticos utilizand
 ### Evidência
 ![printgithub](./img/diagrama.png)
 Fonte: claude
+
 O projeto trabalha com múltiplas fontes heterogêneas de captura:
 Tela (Screen)
 Áudio
@@ -46,7 +47,6 @@ Foi identificado o seguinte fluxo conceitual:
 Fonte:github(github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-server/src/paired_capture.rs#L1-L6)
 ![printgithub4facade](./img/printghub4.png)
 Fonte:github(https://github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-engine/src/server.rs)
-
 
 ### Diagnóstico
 O sistema demonstra forte aderência conceitual ao padrão Adapter.
