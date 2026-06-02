@@ -1,7 +1,9 @@
 ## C1. Padrões Criacionais
 ### Evidência 
-![printgithub](./img/printghub.png)
+![printgithub1](./img/printghub.png)
 Fonte:github(https://github.com/search?q=repo%3Ascreenpipe%2Fscreenpipe%20%20DatabaseManager&type=code)
+![printgithub2databasemanger](./img/printghub2.png)
+Fonte:github(https://github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-db/src/db.rs#L196-L219)
 
 Durante a análise arquitetural do projeto screenpipe, foi identificado um componente centralizado responsável pelas operações de armazenamento e indexação de dados:
 DatabaseManager (SQLite + FTS5)
@@ -39,6 +41,13 @@ Foi identificado o seguinte fluxo conceitual:
 -  ├── AudioCaptureAdapter
 -  ├── EventAdapter
 
+### Evidência - Adapter(implícito):
+![printgithub3adapter](./img/printghub3.png)
+Fonte:github(github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-server/src/paired_capture.rs#L1-L6)
+![printgithub4facade](./img/printghub4.png)
+Fonte:github(https://github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-engine/src/server.rs)
+
+
 ### Diagnóstico
 O sistema demonstra forte aderência conceitual ao padrão Adapter.
 Esse padrão permite padronizar diferentes mecanismos de captura sob uma interface comum, reduzindo a dependência direta de APIs específicas do sistema operacional.
@@ -55,7 +64,14 @@ Sugere-se consolidar explicitamente interfaces comuns para captura e processamen
 
 ## C3. Padrões Comportamentais
 ### Evidência
-Foi identificado um fluxo contínuo de processamento no sistema:
+![printgithub5capturetrigger](./img/printghub5.png)
+Fonte:github(https://github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-engine/src/event_driven_capture.rs#L28-L66)
+![printgithub6triggersender](./img/printghub6.png)
+Fonte:github(https://github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-engine/src/event_driven_capture.rs#L323-L338)
+![printgithub7immediatetx](./img/printghub7.png)
+Fonte:github(https://github.com/screenpipe/screenpipe/blob/main/crates/screenpipe-db/src/db.rs#L60-L122)
+
+Também foi identificado um fluxo contínuo de processamento no sistema:
 Captura → OCR/STT → Processamento → Banco → API
 Também foram observados múltiplos motores de OCR e STT:
 Apple Vision
