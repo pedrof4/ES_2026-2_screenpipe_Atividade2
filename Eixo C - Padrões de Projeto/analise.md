@@ -34,10 +34,10 @@ Tela (Screen)
 Eventos UI …
 Essas entradas passam por mecanismos distintos de processamento, incluindo OCR, STT e acessibilidade.
 Foi identificado o seguinte fluxo conceitual:
-CaptureAdapter
- ├── ScreenCaptureAdapter
- ├── AudioCaptureAdapter
- ├── EventAdapter
+- CaptureAdapter
+-  ├── ScreenCaptureAdapter
+-  ├── AudioCaptureAdapter
+-  ├── EventAdapter
 
 ### Diagnóstico
 O sistema demonstra forte aderência conceitual ao padrão Adapter.
