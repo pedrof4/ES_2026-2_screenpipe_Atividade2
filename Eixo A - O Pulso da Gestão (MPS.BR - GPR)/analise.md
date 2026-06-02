@@ -1,12 +1,10 @@
----
+
 
 # Eixo A — O Pulso da Gestão (MPS.BR – GPR)
 
 **Projeto analisado:** Screenpipe
 
 **Repositório:** [https://github.com/screenpipe/screenpipe](https://github.com/screenpipe/screenpipe)
-
----
 
 ## 1. Arqueologia de Issues
 
