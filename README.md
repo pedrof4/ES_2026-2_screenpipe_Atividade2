@@ -10,12 +10,12 @@
 
 ## Equipe
 
-- Gian Glauberty Santos Nascimento – 202300061616 
-- Pedro César Figueiredo Carneiro – 202300061732 
-- Pedro Miguel Castro França – 202300061741 
-- João Marcelo Silva da Conceição – 202300095820 
-- Renner do Nascimento Brito – 202300061797 
-- Paulo Gabriel de Oliveira Cardoso – 202000047735
+- Gian Glauberty Santos Nascimento – 202300061616 (Eixo A: O Pulso da Gestão)
+- Pedro César Figueiredo Carneiro – 202300061732 (Eixo B: Anatomia do Código)
+- Pedro Miguel Castro França – 202300061741 (Eixo C: Padrões de Projeto)
+- João Marcelo Silva da Conceição – 202300095820 (Montagem de Slide e Revisão)
+- Renner do Nascimento Brito – 202300061797 (Direção e edição do vídeo)
+- Paulo Gabriel de Oliveira Cardoso – 202000047735 (Plano de Resgate)
 
 ---
 
@@ -159,15 +159,9 @@ As evidências da auditoria foram obtidas diretamente do projeto:
 
 ---
 
-## Plano de Resgate Técnico
+### Estrutura do repositório
 
-As principais recomendações propostas foram:
-
-1. Formalização de interfaces para provedores de IA.
-2. Redução de dependências diretas entre componentes.
-3. Ampliação do uso de padrões Strategy e Adapter.
-4. Evolução dos mecanismos de validação e qualidade.
-5. Melhoria da rastreabilidade entre requisitos, implementação e testes.
+[Análise Pulso da Gestão](./)
 
 ---
 
