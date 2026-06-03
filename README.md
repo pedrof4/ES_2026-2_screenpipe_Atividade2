@@ -4,7 +4,7 @@
 ---
 
 ## Vídeo da Auditoria
- Link do vídeo:
+ Link do vídeo: [Youtube](https://youtu.be/GPq79VpSPSc)
 
  ---
 
