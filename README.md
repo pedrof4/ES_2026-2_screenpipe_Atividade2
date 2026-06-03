@@ -161,7 +161,13 @@ As evidências da auditoria foram obtidas diretamente do projeto:
 
 ### Estrutura do repositório
 
-[Análise Pulso da Gestão](./)
+[Análise Pulso da Gestão](./Eixo%20A%20-%20O%20Pulso%20da%20Gestão%20(MPS.BR%20-%20GPR)/analise.md)
+
+[Análise Anatomia do Código](./Eixo%20B%20-%20Anatomia%20do%20Código%20(SOLID%20&%20DRY)/analise_eixo_b.md)
+
+[Análise Padrões de Projeto](./Eixo%20C%20-%20Padrões%20de%20Projeto%20(GoF)/analise.md)
+
+[Plano de Resgate Sugerido](./Plano%20de%20Resgate/plano.md)
 
 ---
 
